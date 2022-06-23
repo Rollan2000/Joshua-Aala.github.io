@@ -1,0 +1,660 @@
+
+
+/********* Font-face for the Pacman Website **********/
+
+@font-face 
+{
+    font-family: 'Press Start 2P';
+    src: url('./font/prstartk.ttf');
+}
+
+
+
+
+
+
+
+
+/********* COLOR BACKGROUND of the WEBSITE **********/
+
+
+body
+{
+    background-color: black;
+}
+
+
+
+
+
+
+
+/**************************************************************** Header & NAV SECTION***************************************************/
+
+
+
+
+    /*********Using the Navigation links to fade into yellow using a .5s transition.**********/
+
+
+#nav-bar
+{
+
+    text-align:center;
+    word-spacing: 16px;
+    font-size: 1rem;
+    margin: auto;
+    font-family: 'Press Start 2P';
+    color: white;
+    padding-left:50px;
+
+}
+
+#nav-bar a
+{
+    color: white;
+    transition: .5s all ease-in-out;
+    text-decoration: none;
+
+}
+
+#nav-bar a:hover
+{
+    color:#F9ED3F;
+
+}
+
+    /*********Pacman Logo placed on the center of the website**********/
+
+
+
+#pacman-logo 
+{
+    Display:flex;
+    justify-content: center;
+
+    padding: 100px 0px;
+    margin: auto;
+}
+
+
+
+/**********************************************************************HOME SECTION*******************************************************/
+
+
+#home
+{
+
+    padding: 200px 0px;
+    Display:flex;
+    justify-content: center;
+
+
+}
+
+  /*********Positioning both Pacman and the ghosts in a aligned position to make a linear animation loop**********/
+
+
+     /*********Using transform on on the ghost to rotate facing left.**********/
+
+
+.Pacman-image
+
+{
+    margin-right: 60px;
+    transform: rotate(180deg);
+    
+
+}
+
+.Pacman-image2
+{
+  margin-left: 60px;
+}
+
+
+.color-ghosts img
+
+{
+  padding-right:20px;
+}
+
+
+        /*********Using transform on on the ghost to rotate facing right**********/
+
+
+.color-ghosts2 img
+
+{
+    padding-right:20px;
+    transform: rotateY(180deg);
+}
+
+
+
+
+#Insert
+{
+    
+    text-align:center;
+    font-family: 'Press Start 2P';
+    color: white;
+   
+    padding-bottom: 100px;
+
+}
+
+
+
+
+.chase-right
+{
+    text-align: center;
+}
+
+
+    /********* Animation 1- Ghosts chases Pacman off the left side of the screen**********/
+
+
+.chase-left
+{
+  
+    animation-name: chase-left;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes chase-left 
+{
+    0%   {transform: translate(1900px)}/*Ghosts chases Pacman off the left side of the screen*/ 
+    100% {transform: translate(-1100px)}/*Ghosts chases Pacman off the left side of the screen*/
+}
+
+
+
+ @keyframes chase-left 
+{
+    0%   {transform: translate(1900px)}/*Ghosts chases Pacman off the left side of the screen*/ 
+    100% {transform: translate(-1100px)}/*Ghosts chases Pacman off the left side of the screen*/
+}
+
+
+
+
+    /*********Animation 3- Ghosts chases Pacman off the right side of the screen.**********/
+
+
+ .chase-right
+ {
+     animation-name: chase-right;
+     animation-duration:6s;
+     animation-iteration-count:infinite;
+     animation-timing-function: linear;
+  
+ }
+ 
+
+ @keyframes chase-right 
+ {
+    100%   {transform: translateX(1100px)} /*Ghosts chases Pacman off the right side of the screen.*/ 
+     0%    {transform: translateX(-1100px)}/*Ghosts chases Pacman off the right side of the screen.*/ 
+ }
+
+@keyframes chase-right 
+{
+    100%  {transform: translateX(1900px)}/*Ghosts chases Pacman off the right side of the screen.*/ 
+     0%   {transform: translateX(-1100px)}/*Ghosts chases Pacman off the right side of the screen.*/ 
+}
+
+
+
+
+
+    /*************Animation 2-"INSERT COIN" title looping blinking pattern, 1s visible, and 1s invisible.**********/
+
+
+#Insert
+{
+    animation-name: Insert;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: infinite;
+}
+
+@keyframes Insert
+{
+    0%   {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+
+
+
+
+
+
+/*****************************************************************HIGH SCORES SECTION****************************************************************/
+
+
+
+
+
+    /*********Between each section add a dotted line. Use section:after in CSS.**********/
+
+
+#Score-Section:before
+{
+    display: block;
+    content: "";
+    border-bottom: 1px dotted #F9ED3F;
+    margin-bottom:250px;
+
+}
+
+
+
+    /*********Scorebooard lists.**********/
+
+
+#Score-Section
+{
+    text-align:center;
+    font-family: 'Press Start 2P';
+    margin-top:300px;
+    color: white;
+   
+   
+}
+
+#Score-Section h1
+{ 
+    color:#F9ED3F;
+    font-size: 2em;
+    padding-left: 30px;
+  
+
+}
+
+#Score-Section h2
+{
+
+    font-size: 1rem;  
+
+
+}
+
+
+.Score-board
+{
+    Display:flex;
+    justify-content: center;
+
+}
+
+
+.Score-board  th
+
+{
+    padding-bottom: 25px;
+
+}
+
+
+.Score-board  td
+{
+    Padding-right: 95px;
+    Padding-left: 95px;
+    padding-bottom: 5px;
+   
+}
+
+     /*********Style the text colour on the “High Scores” list using nth-child().**********/
+
+.Score-board tbody tr:nth-child(1) 
+{
+    color:#FFA002;
+}
+
+.Score-board tbody tr:nth-child(2) 
+{
+    color:#FF0401;
+}
+
+.Score-board tbody tr:nth-child(3) 
+{
+    color:#01F8F8;
+}
+
+.Score-board tbody tr:nth-child(4) 
+{
+    color:#FF60B0;
+}
+
+.Score-board tbody tr:nth-child(5) 
+{
+    color:#FFA002;
+}
+
+.Score-board tbody tr:nth-child(6) 
+{
+    color:#FF0401;
+}
+
+.Score-board tbody tr:nth-child(7) 
+{
+    color:#01F8F8;
+}
+
+.Score-board tbody tr:nth-child(8) 
+{
+    color:#FF60B0;
+}
+
+.Score-board tbody tr:nth-child(9) 
+{
+    color:#FFA002;
+}
+
+.Score-board tbody tr:nth-child(10) 
+{
+    color:#FF0401;
+}
+
+
+
+    /*********Between each section add a dotted line. Use section:after in CSS.**********/
+
+
+#Score-Section:after
+{
+    display: block;
+    content: "";
+    border-bottom: 1px dotted #F9ED3F;
+    margin-top:300px;
+   
+   
+}
+
+/************************************************HOW TO PLAY SECTION*******************************/
+
+
+
+        /*********Between each section add a dotted line. Use section:after in CSS.**********/
+
+
+#Play-Section
+{
+    font-family: 'Press Start 2P';
+    color: white;
+    text-align:center;
+    
+    letter-spacing: normal;
+   padding-top:300px;
+
+}
+
+
+    /*********Animation 4- Pacman chases Ghost off the right side of the screen.**********/
+
+
+
+.Play
+{
+
+    animation-name:Play;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes Play
+{
+    100%   {transform: translateX(1100px)}/*Pacman chases ghost to the right*/
+     0%    {transform: translateX(-1100px)}/*Pacman chases ghost to the right*/
+}
+
+@keyframes Play 
+{
+    100%   {transform: translateX(1900px)}
+     0%    {transform: translateX(-1100px)}
+}
+
+
+
+
+     /*********Using transform on on the pacman to rotate facing left**********/
+
+
+.Play2 img
+{
+
+    transform: rotateY(180deg);
+
+
+}
+
+.Pacman-image2
+{
+    padding-right:20px;   
+    margin-right: 60px;
+}
+
+     /*********Animation 5- Pacman chases Ghost off the left side of the screen.**********/
+
+.Play2
+{
+
+    animation-name:Play2;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes Play2 
+{
+    0%   {transform: translate(1900px)}/*Pacman chases ghost to the left*/
+    100% {transform: translate(-1100px)}/*Pacman chases ghost to the left*/
+ }
+ @keyframes Play2 
+ {
+    0%   {transform: translate(1900px)}/*Pacman chases ghost to the left*/
+    100% {transform: translate(-1100px)}/*Pacman chases ghost to the left*/
+ }
+
+
+
+
+.tutorial-text
+{
+    width:50%;
+    margin:auto;
+    letter-spacing: normal;
+    text-align: center;
+    font-size:1.4rem; 
+    padding: 20px;
+
+}
+
+     /*********Style the first-line to be all caps and yellow.**********/
+
+div p:nth-child(1)
+{
+    color:#FFD300;
+}
+
+     /*********Between each section add a dotted line. Use section:after in CSS.**********/
+
+#Play-Section:after
+{
+    display: block;
+    content: "";
+    border-bottom: 1px dotted #F9ED3F;
+    padding-top:300px;
+   
+
+}
+
+/***************************************************PLAYER SECTION****************************************************/
+
+
+
+#Players-Section
+{
+
+   text-align:center;
+   font-family: 'Press Start 2P';
+   color: white;
+   padding-top: 90px;
+    
+   
+
+
+}
+
+.Player-list
+{
+    Display:flex;
+    flex-direction: column;
+    Align-items: center;
+    padding-bottom:20px;
+    font-family: 'Press Start 2P';
+}
+
+ 
+
+
+
+
+.Player-list tr td
+{
+    
+    padding-top: 30px;
+    padding-right: 60px;
+  
+}
+
+
+
+.ghosts
+{
+
+ transform: rotateY(180deg);
+ 
+}  
+
+
+
+.points-list1
+{
+    font-family: 'Press Start 2P';
+
+    Display:flex;
+    justify-content: center;
+    flex-direction: row;
+   
+
+
+    
+
+}
+
+.Blue-ghost2
+{
+    padding-left: 50px; 
+    padding-top:7px;
+
+}
+
+
+.points-list2 
+{
+    font-family: 'Press Start 2P';
+
+    Display:flex;
+    justify-content: center;
+    padding-bottom:100px;
+    
+}
+
+.points-list2 tr td
+{
+    Padding-top:40px;
+
+}
+
+
+
+
+ /*********Style the text colour on the “Players” list using nth-of-type().**********/
+
+
+
+.Player-list tbody tr:nth-of-type(1)
+{
+    color: #FF0401;
+}
+
+.Player-list tbody tr:nth-of-type(2)
+{
+    color: #FF60B0;
+}
+
+.Player-list tbody tr:nth-of-type(3)
+{
+    color: #01F8F8;
+}
+
+.Player-list tbody tr:nth-of-type(4)
+{
+    color: #FFA002;
+}
+
+
+
+
+ /*********Using the scale transition to make the yellow dots grow big.**********/
+
+
+#point1
+{
+    color:#F9ED3F;
+
+    transform:Scale(6) ;
+    position :relative;
+    bottom:124px;
+    left:50px;
+
+}
+
+#point2
+{
+    color:#F9ED3F;
+
+    transform:Scale(2) ;
+    position :relative;
+    bottom:30px;
+    left:40px;
+
+}
+
+
+/**************************************************************FOOTER SECTION*********************************************/
+
+
+
+
+
+#Pacman-footer
+{
+    
+        font-family: 'Press Start 2P';
+        color: white;
+        font-size: 0.4rem;
+        text-align:center;
+}
