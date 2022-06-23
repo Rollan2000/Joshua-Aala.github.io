@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+
+<title> Rich Media HTML5/CSS3 Website </title>
+<meta charset="UTF-8">
+<meta name="description" content="Build a fan site for the classic video game Pac Man">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!---------------------------------------HEADER & NAV ------------------------------------->
+
+
+
+     <!-------------Wrap---------------->
+
+
+    <div class="wrapper">
+
+    <!-------------Navigation Bar---------------->
+        <div id="nav-bar">    
+
+            <tr>
+                <th>   <a href="#Home">HOME</a></th>
+                <th>    <a href="#Score-Section">HIGH SCORES</a></th>
+                <th>    <a href="#Play-Section">HOW TO PLAY</a></th>
+                <th>    <a href="#Players-Section">PLAYERS</a></th>
+            </tr>
+        </div>
+
+    <!-------------Logo---------------->
+
+        <div id="pacman-logo">
+            
+            <img src="images/Pac_man_logo.png" height="200"  width="37%"  alt="Pacman Logo">
+
+
+
+    </div>
+
+
+
+
+
+    <!--------------------------------- HOME SECTION ---------------------------------------->
+
+
+
+
+
+    <!----- Animation 1- Ghosts chases Pacman off the left side of the screen ------>
+
+    <section id="home" alt="Home section bar">
+        
+<div class="chase-left">
+        
+     <img class="Pacman-image" src="images/Pacman.png" height="40"  width="40"  alt="Pacman image faces left">
+
+     <span class="color-ghosts">
+        <img src="images/Pinky.png" height="40"  width="40"   alt="Pinky image">
+        <img src="images/Inky.png" height="40"  width="40"  alt="Inky image">
+        <img src="images/Blinky.png" height="40" width="40"  alt="Blinky image">
+        <img src="images/Clyde.png" height="40" width="40"   alt="Clyde image">
+    </span>
+   
+    
+    <div>
+
+</section>
+
+   
+
+   <!----- Animation 2-"INSERT COIN" title looping blinking pattern, 1s visible, and 1s invisible.------>
+
+
+    <h2 id="Insert">INSERT COINS</h2>
+
+
+
+   <!----- Animation 3- Ghosts chases Pacman off the right side of the screen .------>
+
+  
+<div class="chase-right">
+
+   
+
+    <span class="color-ghosts2">
+       <img src="images/Pinky.png" height="40"  width="40"   alt="Pinky image">
+       <img src="images/Inky.png" height="40"  width="40"  alt="Inky image">
+       <img src="images/Blinky.png" height="40" width="40"  alt="Blinky image">
+       <img src="images/Clyde.png" height="40" width="40"   alt="Clyde image">
+   </span>
+
+   <img class="Pacman-image2" src="images/Pacman.png" height="40"  width="40"  alt="Pacman image faces right">
+
+</div>
+
+
+
+</section>
+
+
+    <!-------------------------------------------- HIGH SCORES SECTION------------------------------------->
+
+
+
+            
+   <!----- Scorebooard lists .------>
+
+    <section id="Score-Section" alt="High score section bar">
+
+        <h1> Ready!</h1>
+
+
+        <h2> THE 10 BEST PLAYERS </h2>
+    
+
+        
+        <div class="Score-board">
+           
+                 <table>
+                    <thead>
+                        <tr>
+                            <th> RANK</th>
+                            <th>SCORE</th>
+                            <th>INITIALS</th>
+                        </tr>
+                    </thead>
+                 <tbody>
+                        <tr>
+                            <td>1ST</td>
+                            <td>10,000</td>
+                            <td>JRB</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2ND</td>
+                            <td>9,950</td>
+                            <td>LAB</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>3RD</td>
+                            <td>9,000</td>
+                            <td>CJB</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>4TH</td>
+                            <td> 8,750</span></td>
+                            <td> JBB</td>
+                        </tr>
+
+                        <tr>
+                            <td> 5TH</td>
+                            <td> 8,750</td>
+                            <td> JBB</td>
+                        </tr>
+
+                        <tr>
+                            <td>6TH</td>
+                            <td> 7,750</td>
+                            <td> SBB</td>
+                        </tr>
+
+                        <tr>
+                            <td> 7TH </td>
+                            <td> 7,250 </td>
+                            <td> MLB </td>
+                        </tr> 
+                        <tr>
+                            <td> 8TH</span></td>
+                            <td> 6,850</span></td>
+                            <td> AGD</span></td>
+                        </tr>
+                        <tr>
+                            <td>9TH</td>
+                            <td> 6,850</span></td>
+                            <td> KAD</span></td>
+                        </tr>
+                        <tr>
+                            <td>10TH</span></td>
+                            <td> 6,250</span></td>
+                            <td> BOB</td>
+                        </tr>
+
+                        
+                    </tbody>
+                </table>
+                
+        </section>
+
+    <!----------------------------------------------------------------- HOW TO PLAY SECTION------------------------------------------------------------------->
+
+
+   <!----- Animation 4- Pacman chases Ghost off the right side of the screen .---------------------------->
+
+
+        <Section id="Play-Section" alt="How to play Section bar">
+
+        <div class="Play">
+            <img class="Pacman-image2"  src="images/Pacman.png" height="40"  width="40"  alt="Pacman chases tn the right">
+
+         <span class="Blue-ghost">
+            <img src="images/Eaten.png" height="40"  width="40"  alt="Eaten ghost image 1">
+            <img src="images/Eaten.png" height="40"  width="40"  alt="Eaten ghost image 2">
+            <img src="images/Eaten.png" height="40"  width="40"  alt="Eaten ghost image 3">
+            <img src="images/Eaten.png" height="40"  width="40"  alt="Eaten ghost image 4">
+        </span>
+
+
+      
+
+    </div>
+
+       <!-----Tutorial and Instruction of how to play the game of Pacman.------>
+            
+    <h3>HOW TO PLAY</h3>
+
+    <div class="tutorial-text">
+    <p>SIMPLY SCORE AS MANY POINTS AS YOU</p>
+    <p>can eating the small dots all around the maze. 10 points per dot (240 of them). Big points come when you eat 1 of the 4 Big flashing dots called
+     Energizers worth 50 points locate in each corner of the maze.</p>
+
+
+
+   <!----- Animation 3- Ghosts chases Pacman off the left side of the screen.------>
+     
+    <div class="Play2">
+    <span>
+        <span class="Blue-ghost2">
+
+            <img src="images/Eaten.png" height="40"  width="40"  alt="Eaten ghost image 1">
+            <img src="images/Eaten.png" height="40"  width="40"  alt="Eaten ghost image 2">
+            <img src="images/Eaten.png" height="40"  width="40"  alt="Eaten ghost image 3">
+            <img src="images/Eaten.png" height="40"  width="40"  alt="Eaten ghost image 4">
+            
+        <img class="Pacman-image2"  src="images/Pacman.png" height="40"  width="40"  alt="Pacman chases ghost to the left">
+    </span>
+
+
+
+        </div>
+        
+      </section>
+
+        <!----------------------------------------------------------- PLAYER SECTION--------------------------------------------------------->
+        
+        <Section id="Players-Section" alt="Player Section Bar">
+
+
+
+
+            <!----- PLayer lists.------>
+
+
+           
+            <h3>PLAYERS</h3>
+
+
+            <table class="Player-list">
+
+                
+                    <thead>
+                        <tr>
+                            <th>CHARACTER</th>
+                            <th>/ NICKNAME</th>
+                        </tr>
+              </thead>
+                    
+
+
+              <!----- Name of the Ghosts.------>
+            
+                    <tbody>
+
+                        <tr>
+                            <td><img class="ghosts" src="images/Blinky.png" alt="Red ghost image"  height="40"  width="40">
+                            <td>-SHADOW</td>
+                            <td>"BLINKY"</td>
+                        </tr>
+                        
+                        <tr >
+                            <td><img class="ghosts" src="images/Pinky.png" alt="Pink ghost image"  height="40"  width="40">
+                                <td>-SPEEDY</td>
+                                <td>"PINKY"</td>
+                        </tr>
+                          
+                        <tr>
+                            <td><img class="ghosts" src="images/Inky.png" alt="Pink ghost image"  height="40"  width="40">
+                                <td>-BASHFUL</td>
+                                <td>"INKY"</td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="ghosts" src="images/Clyde.png" alt="Orange ghost image"  height="40"  width="40">
+                                <td>-POKEY</td>
+                                <td>"CLYDE"</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <!-----Number of points.------>
+
+
+                <div class="points-list1">
+
+                  <h3>200 PTS</h3>
+
+            <span class="Blue-ghost2">
+                
+                <img src="images/Eaten.png" alt="Blue ghost"  height="40"  width="40">
+                <img src="images/Eaten.png" alt="Blue ghost"  height="40"  width="40">
+                <img src="images/Eaten.png" alt="Blue ghost"  height="40"  width="40">
+
+            </span>
+
+            </div>
+
+             <table class="points-list2">
+
+                <tr>
+                    <td>50 PTS </td>
+                    <td id="point1">.</td>
+                </tr>
+                <tr>
+                    <td>10 PTS </td>
+                    <td id="point2">.</td>
+                </tr>
+
+                </table>
+
+            </div>
+
+        </Section>
+
+
+         <!---------------------------------------------------------------------------- Footer SECTION---------------------------------------------------->
+          
+
+                <!-----Copyright text of Pacman.------>
+
+
+
+            <Footer id="Pacman-footer"> THIS SITE HAS NO AFFIKATION WITH THE ACTUAL PACMAN GAME</Footer>
+
+
+
+</body>
+
+
+</hmtl>
